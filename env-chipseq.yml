@@ -1,0 +1,34 @@
+name: chipseq_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Python side (your pipeline + MACS3 + aligners)
+  - python=3.11
+  - pip
+  - macs3
+  - bowtie2
+  - samtools
+  - bedtools
+  - fastqc
+  - multiqc
+
+  # R base at 4.4 to match Bioconductor 3.20
+  - r-base=4.4
+
+  # R CRAN (via conda-forge)
+  - r-tidyverse
+  - r-data.table
+  - r-stringr
+
+  # Bioconductor (3.20) — these builds require R 4.4
+  - bioconductor-genomicranges
+  - bioconductor-genomicfeatures
+  - bioconductor-rtracklayer
+  - bioconductor-annotationdbi
+  - bioconductor-genomeinfodb
+  - bioconductor-org.sc.sgd.db
+  - bioconductor-chipseeker
+  - bioconductor-txdbmaker
+
