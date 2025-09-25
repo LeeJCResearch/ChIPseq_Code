@@ -1,7 +1,3 @@
-Here’s a drop-in **README.md** you can paste into your repo. It assumes you saved the pipeline as `chipseq_pipeline.py` and you want a clean, reproducible way to run ChIP-seq peak calling + annotation on Ubuntu 24.04.
-
----
-
 # ChIP-seq Peak Calling & Annotation Pipeline (Python + R)
 
 This repository contains a single Python script, `chipseq_pipeline.py`, that performs:
